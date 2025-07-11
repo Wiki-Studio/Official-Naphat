@@ -190,6 +190,7 @@ header a.active {
     overflow: hidden;
     white-space: nowrap;
     animation: marquee 10s linear infinite;
+    width: 100%;
 }
 
 .marquee img {
@@ -199,9 +200,93 @@ header a.active {
     -webkit-user-drag: none;
 }
 
-@keyframes marquee {
-    from { transform: translateX(100%); }
-    to   { transform: translateX(-100%); }
+.naphat-now {
+    background: linear-gradient(90deg, var(--main-col-1), var(--main-col-4));
+}
+
+.flexes {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.flexes .naphat-image {
+    width: 30%;
+}
+
+.flexes .naphat-image img {
+    height: 95%;
+    /* transform: translateX(-50px)!important; */
+    animation: move-img 10s linear infinite;
+}
+
+.naphat-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em 0;
+    padding: 0 10px;
+    color: var(--white-col);
+}
+
+.naphat-text h4 {text-indent: 2em;}
+
+.naphat-text > * {
+    font-weight: 500;
+}
+
+.time-line-edu {
+    background: var(--main-col-3);
+}
+
+.time-linebox {
+    display: flex;
+    justify-content: center;
+}
+
+.subbox {
+    height: 360px;
+    background: #FFFFFF50;
+}
+
+.subbox.none {
+    background: transparent;
+}
+
+.right-box-timeline,
+.left-box-timeline {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 20px 0;
+}
+
+.left-box-timeline {
+    
+}
+
+.line {
+    margin: 20px;
+    width: 2px;
+    background: var(--white-col);
+}
+
+.right-box-timeline {
+    
+}
+
+.right-box-timeline img,
+.left-box-timeline img {
+    border-radius: 50%;
+    width: 150px;
+    padding: 20px;
+}
+
+.textbox {
+    padding: 0 20px;
+    color: var(--white-col);
+    padding: 0 10px 10px 10px;
 }
 
 /* media */
@@ -279,6 +364,24 @@ header a.active {
 
     /* .hd_list.toggle > ul > li.has-submenu.open li {} */
 
+
+    .flexes {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .naphat-image, .naphat-text {
+        width: 100% !important;
+    }
+
+    .naphat-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .naphat-image img {
+        height: 20% !important;
+    }
 }
 
 /* keyframes */
@@ -287,4 +390,15 @@ header a.active {
     100% {
         background-position: 200%;
     }
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(-100%); }
+}
+
+@keyframes move-img {
+    0%   { transform: translateY(10px); }
+    50%   { transform: translateY(-10px); }
+    100%   { transform: translateY(10px); }
 }

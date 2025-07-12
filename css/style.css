@@ -257,7 +257,7 @@ header a.active {
 }
 
 .subbox:not(.none):hover {
-    background: var(--main-col-1);
+    background: #FFFFFF75;
 }
 
 /* .subbox:not(.none):hover > * {

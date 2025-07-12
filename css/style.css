@@ -247,6 +247,8 @@ header a.active {
 .subbox {
     height: 360px;
     background: #FFFFFF50;
+    transition: .5s background;
+    cursor: pointer;
 }
 
 .subbox.none {

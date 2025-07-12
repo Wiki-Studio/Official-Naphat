@@ -1,8 +1,12 @@
+// จัดการเมนูย่อย toggle
 document.querySelectorAll('.menu.has-submenu').forEach(menuItem => {
     menuItem.addEventListener('click', function (e) {
+        // ถ้าคลิกที่ <a> โดยตรง ให้ปล่อยให้ลิงก์ทำงานตามปกติ
+        if (e.target.tagName.toLowerCase() === 'a') return;
+
         e.preventDefault();
 
-        // ปิดทุกเมนูที่เปิดอยู่
+        // ปิดเมนูอื่นที่เปิดอยู่
         document.querySelectorAll('.menu.has-submenu.open').forEach(openItem => {
             if (openItem !== this) {
                 openItem.classList.remove('open');
@@ -13,6 +17,8 @@ document.querySelectorAll('.menu.has-submenu').forEach(menuItem => {
         this.classList.toggle('open');
     });
 });
+
+// จัดการ class "active" สำหรับเมนูตามหน้าเพจปัจจุบัน
 window.addEventListener("DOMContentLoaded", () => {
     const currentPage = location.pathname.split("/").pop(); // ดึงชื่อไฟล์หลังสุด เช่น index.html
     const links = document.querySelectorAll("header a");

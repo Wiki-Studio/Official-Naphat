@@ -190,7 +190,6 @@ header a.active {
     overflow: hidden;
     white-space: nowrap;
     animation: marquee 10s linear infinite;
-    width: 100%;
 }
 
 .marquee img {

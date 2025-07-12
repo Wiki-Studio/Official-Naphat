@@ -249,6 +249,7 @@ header a.active {
     background: #FFFFFF50;
     transition: .5s background;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .subbox.none {
@@ -256,13 +257,12 @@ header a.active {
 }
 
 .subbox:not(.none):hover {
-    background: var(--white-col);
-    color: var(--bl-col);
+    background: var(--main-col-1);
 }
 
-.subbox:not(.none):hover > * {
+/* .subbox:not(.none):hover > * {
     color: var(--bl-col);
-}
+} */
 
 .right-box-timeline,
 .left-box-timeline {

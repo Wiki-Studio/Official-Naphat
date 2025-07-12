@@ -253,6 +253,15 @@ header a.active {
     background: transparent;
 }
 
+.subbox:not(.none):hover {
+    background: var(--white-col);
+    color: var(--bl-col);
+}
+
+.subbox:not(.none):hover > * {
+    color: var(--bl-col);
+}
+
 .right-box-timeline,
 .left-box-timeline {
     display: flex;

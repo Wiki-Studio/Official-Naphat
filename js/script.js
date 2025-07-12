@@ -1,8 +1,16 @@
 // จัดการเมนูย่อย toggle
 document.querySelectorAll('.menu.has-submenu').forEach(menuItem => {
     menuItem.addEventListener('click', function (e) {
-        // ถ้าคลิกที่ <a> โดยตรง ให้ปล่อยให้ลิงก์ทำงานตามปกติ
-        if (e.target.tagName.toLowerCase() === 'a') return;
+        // ถ้าคลิกเกิดขึ้นใน a tag ภายในเมนูย่อยของ .has-submenu.open ให้ปล่อยผ่าน
+        const isInsideSubmenuLink =
+            this.classList.contains('open') &&
+            e.target.closest('.menu.has-submenu ul') &&
+            e.target.tagName.toLowerCase() === 'a';
+
+        if (isInsideSubmenuLink) {
+            // ปล่อยให้ลิงก์ทำงานตามปกติ (เช่น ไปหน้าอื่น)
+            return;
+        }
 
         e.preventDefault();
 
@@ -18,20 +26,20 @@ document.querySelectorAll('.menu.has-submenu').forEach(menuItem => {
     });
 });
 
-// จัดการ class "active" สำหรับเมนูตามหน้าเพจปัจจุบัน
+// จัดการ active class ให้กับลิงก์ที่ตรงกับชื่อไฟล์
 window.addEventListener("DOMContentLoaded", () => {
-    const currentPage = location.pathname.split("/").pop(); // ดึงชื่อไฟล์หลังสุด เช่น index.html
+    const currentPage = location.pathname.split("/").pop(); // ดึงชื่อไฟล์ เช่น index.html
     const links = document.querySelectorAll("header a");
 
     links.forEach(link => {
         const className = link.className.trim();
 
-        // เงื่อนไขที่ 1: ถ้าชื่อ class ตรงกับชื่อไฟล์
+        // ถ้าชื่อ class ตรงกับชื่อไฟล์
         if (className === currentPage) {
             link.classList.add("active");
         }
 
-        // เงื่อนไขที่ 2: ถ้าไม่มี class active และมี class อื่น
+        // ถ้ายังไม่มี active และ class มีอยู่
         if (!link.classList.contains("active") && className) {
             link.setAttribute("href", className);
         }

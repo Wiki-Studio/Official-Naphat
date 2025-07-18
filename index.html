@@ -1,153 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>NAPHAT OFFICIAL | หน้าหลัก</title>
-    <meta name="description" content="เว็บไซต์ทางการของนายณภัทร ปัญโญ เพื่อเผยแพร่ประวัติ ผลงาน ความสนใจ และแรงบันดาลใจในการศึกษา วิศวกรรม และเทคโนโลยี">
-    <meta name="keywords" content="ณภัทร, ปัญโญ, Naphat, Panyo, วิศวกรรม, เทคโนโลยี, เว็บไซต์ส่วนตัว, Naphat OFFICIAL">
-    <meta name="author" content="Naphat Panyo">
-
-    <!-- Open Graph (Facebook, LINE) -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="NAPHAT OFFICIAL | ประวัตินายณภัทร ปัญโญ">
-    <meta property="og:description" content="เรียนรู้เกี่ยวกับชีวิต แรงบันดาลใจ และเส้นทางสู่ความสำเร็จของนายณภัทร ปัญโญ">
-    <meta property="og:image" content="/img/naphat-cover.png>
-    <meta property="og:url" content="https://naphatofficial.pages.dev">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NAPHAT OFFICIAL">
-    <meta name="twitter:description" content="เว็บไซต์เผยแพร่ประวัติและผลงานของนายณภัทร ปัญโญ">
-    <meta name="twitter:image" content="/img/naphat-cover.png">
-
-    <!-- Favicon -->
-    <link rel="icon" href="/img/naphat-cover.png" type="image/x-icon">
+    <title>NaphatDev - Developer & Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="top_header">
-        <img src="img/banner.png" alt="">
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
     </div>
-    <header>
-        <div class="container hd_nav">
-            <div class="hd_logo">
-                <img src="img/naphat_official.png" alt="">
-            </div>
-            <div class="hd_list">
-                <ul>
-                    <li class="menu">
-                        <a class="index">หน้าหลัก</a>
-                    </li>
-                    <li class="menu has-submenu">
-                        <a class="about">รู้จักณภัทร</a>
-                        <ul>
-                            <li><a class="history">ประวัติของณภัทร</a></li>
-                            <li><a class="education">ประวัติการศึกษา</a></li>
-                            <li><a class="experience">ประสบการณ์</a></li>
-                            <li><a class="performance">ผลงาน</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <a class="news">ข่าวสารณภัทร</a>
-                    </li>
-                    <li class="menu has-submenu">
-                        <a class="sites">เว็บไซต์</a>
-                        <ul>
-                            <li><a href="https://dara-esc.pages.dev/">DESC</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <a class="contact">ติดต่อ</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="hd_icon">
-                <div class="site-toggle" id="menuToggle">
-                    <b></b>
-                    <b></b>
-                    <b></b>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="banner">
-            <div class="container">
-                <div class="banner-inner">
-                    <img src="img/naphat_official.png" width="120">
-                    <h3>เว็บไซต์นี้ จัดทำขึ้นเพื่อเผยแพร่ประวัติ ผลงาน และแรงบันดาลใจของ 
-                        <u>นายณภัทร ปัญโญ</u> ให้ผู้เข้าชมได้รู้จักตัวตน ความสามารถ และเส้นทางแห่งความมุ่งมั่นของเขา 
-                        ในด้านการศึกษา เทคโนโลยี วิศวกรรม และสังคม <br><small>(เว็บไซต์นี้ไม่ได้เผยแพร่ข้อมูลส่วนตัวใดๆ ของเจ้าของเว็บไซต์)</small></h3>
-                </div>
-            </div>
-        </div>
-        <div class="bg-extra">
-            <div class="container">
-                <div class="marquee">
-                    <img src="img/naphat_official.png" height="46.8px">
-                    <img src="https://naphatdev.pages.dev/public/assets/images/logo.png" height="46.8px">
-                    <img src="https://dara-esc.pages.dev/assets/logo.png" height="46.8px">
-                </div>
-            </div>
-        </div>
-        <div class="naphat-now">
-            <div class="container">
-                <div class="flexes">
-                    <div class="naphat-image">
-                        <img src="/img/naphat.png" alt="">
-                    </div>
-                    <div class="naphat-text">
-                        <h3>กระผม นายณภัทร ปัญโญ</h3>
-                        <h4>ปัจจุบันศึกษาอยู่ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง คณะวิศวกรรมศาสตร์ สาขาเครื่องกล (หลักสูตรวิศวกรรมขนส่งทางราง) ชั้นปีที่ <span>1</span> ศิษย์เก่าโรงเรียนดาราวิทยาลัย จ.เชียงใหม่ แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ (เตรียมวิศวกรรมศาสตร์) รุ่นที่ 2 ในฐานะประธานกรรมการบริหาร DESC</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="time-line-edu">
-            <div class="conatainer">
-                <center>
-                    <h1 
-                    style="color: #FFF;
-                    padding-top: 20px;">ประวัติการศึกษา</h1>
-                </center>
-            </div>
-            <div class="container time-linebox">
-                <div class="left-box-timeline">
-                    <div class="subbox">
-                        <img src="/img/DRA.png" alt="">
-                        <div class="textbox">
-                            <h3>โรงเรียนดาราวิทยาลัย</h3>
-                            <p>(ปีการศึกษา 2556 - 2567) <br>ระยะเวลา 12 ปี</p>
-                            <p>ระดับประถมศึกษา</p>
-                            <p>ระดับมัธยมศึกษา</p>
-                            <p>แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์ (เตรียมวิศวกรรมศาสตร์)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="right-box-timeline">
-                    <div class="subbox none"></div>
-                    <div class="subbox">
-                        <img src="/img/kmitl.png" alt="">
-                        <div class="textbox">
-                            <h3>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</h3>
-                            <p>(ปีการศึกษา 2568 - ปัจจุบัน) <br>ชั้นปีที่ 1</p>
-                            <p>ระดับอุดมศึกษา</p>
-                            <p>คณะวิศวกรรมศาสตร์</p>
-                            <p>สาขาวิศวกรรมขนส่งทางราง</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-    <footer>
 
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://naphat.pages.dev/public/assets/images/logo.png" alt="NaphatDev Logo">
+            <h1>NaphatDev</h1>
+        </div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="#projects">โปรเจคต์</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>สวัสดีครับ, ผมคือ <span>NaphatDev</span></h2>
+            <p>นักพัฒนาเว็บไซต์และนักออกแบบที่รักในการสร้างสรรค์ผลงานที่มีคุณภาพและมีเอกลักษณ์เฉพาะตัว</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">ดูผลงาน</a>
+                <a href="#contact" class="btn btn-outline">ติดต่อผม</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Developer working">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-title">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>เรียนรู้เพิ่มเติมเกี่ยวกับตัวฉันและทักษะที่ฉันมี</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="NaphatDev">
+            </div>
+            <div class="about-text">
+                <h3>นักพัฒนาเว็บและนักออกแบบ</h3>
+                <p>ผมมีความหลงใหลในการสร้างเว็บไซต์และแอปพลิเคชันที่สวยงามและใช้งานได้ดี ฉันมุ่งมั่นที่จะสร้างประสบการณ์ผู้ใช้ที่ยอดเยี่ยมและแก้ปัญหาที่ซับซ้อนด้วยโค้ดที่สะอาดและมีประสิทธิภาพ</p>
+                <p>นอกเหนือจากการเขียนโค้ดแล้ว ฉันยังสนใจในการออกแบบ UI/UX และการสร้างแบรนด์ที่โดดเด่นสำหรับธุรกิจต่างๆ</p>
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">React</span>
+                    <span class="skill">Node.js</span>
+                    <span class="skill">UI/UX Design</span>
+                    <span class="skill">Figma</span>
+                    <span class="skill">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-title">
+            <h2>โปรเจคต์ของฉัน</h2>
+            <p>ผลงานล่าสุดที่ฉันได้สร้างสรรค์ขึ้น</p>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>เว็บไซต์บริษัท</h3>
+                    <p>เว็บไซต์บริษัทที่ทันสมัยพร้อมระบบจัดการเนื้อหา</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> ลิ้งค์เว็บไซต์</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>แอปพลิเคชันบันทึกการเงิน</h3>
+                    <p>แอปพลิเคชันสำหรับบันทึกรายรับรายจ่ายส่วนบุคคล</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> ลิ้งค์เว็บไซต์</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>ระบบจองห้องพัก</h3>
+                    <p>ระบบจองห้องพักออนไลน์สำหรับโรงแรม</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Vue.js</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">UI Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> ลิ้งค์เว็บไซต์</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-title">
+            <h2>ติดต่อฉัน</h2>
+            <p>สนใจทำงานร่วมกันหรือมีคำถาม? ติดต่อฉันได้ที่นี่</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>ข้อมูลติดต่อ</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>อีเมล</h4>
+                            <a href="mailto:contact@naphatdev.com">contact@naphatdev.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>โทรศัพท์</h4>
+                            <a href="tel:+66123456789">+66 123 456 789</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>ที่อยู่</h4>
+                            <p>กรุงเทพมหานคร, ประเทศไทย</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>ส่งข้อความถึงฉัน</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">ชื่อ</label>
+                        <input type="text" id="name" placeholder="ชื่อของคุณ">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">อีเมล</label>
+                        <input type="email" id="email" placeholder="อีเมลของคุณ">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">หัวข้อ</label>
+                        <input type="text" id="subject" placeholder="หัวข้อ">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ข้อความ</label>
+                        <textarea id="message" placeholder="ข้อความของคุณ"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">ส่งข้อความ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://naphat.pages.dev/public/assets/images/logo.png" alt="NaphatDev Logo">
+                <h2>NaphatDev</h2>
+            </div>
+            <div class="footer-links">
+                <a href="#home">หน้าแรก</a>
+                <a href="#about">เกี่ยวกับฉัน</a>
+                <a href="#projects">โปรเจคต์</a>
+                <a href="#contact">ติดต่อ</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">© 2023 NaphatDev. สงวนลิขสิทธิ์ทุกประการ</p>
+        </div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    
+    <script src="/js/main.js"></script>
 </body>
 </html>

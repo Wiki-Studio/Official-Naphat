@@ -5,6 +5,10 @@
 /* style */
 
         :root {
+            --main-col-1: #F16322;
+            --main-col-2: #F12222;
+            --main-col-3: #ffc400;
+            --main-col-4: #ffbb4c;
             --primary-color: #2563eb;
             --secondary-color: #1e40af;
             --dark-color: #1e293b;
@@ -150,7 +154,8 @@
         }
         
         .hero-content h2 span {
-            color: var(--primary-color);
+            color: var(--main-col-1);
+            /*color: var(--primary-color);*/
         }
         
         .hero-content p {
